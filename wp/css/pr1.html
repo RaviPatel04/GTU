@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-1 CSS</title>
+    <style>
+        .container {
+            height: 400px;
+            display: flex;
+        }
+
+        .profile {
+            height: 1365px;
+            width: 500px;
+            background-color: #982727;
+            margin-left: 25px;
+            text-align: center;
+            box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
+        }
+
+        .profile img {
+            height: 320px;
+            width: 320px;
+            margin: 70px 0px 70px 0px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+
+        .profile> :nth-child(2) {
+            font-size: 30px;
+            font-weight: 900;
+            width: 200px;
+            text-align: left;
+            margin: 10px 0px 40px 150px;
+            color: white;
+        }
+
+        .profile> :nth-child(3) {
+            font-size: 30px;
+            font-weight: 900;
+            width: 250px;
+            text-align: left;
+            margin: 0px 0px 10px 150px;
+            color: white;
+        }
+
+
+        .my {
+            letter-spacing: 1px;
+            font-size: large;
+            margin: 10px 0px 0px 0px;
+            font-weight: 100;
+            line-height: 2;
+        }
+
+        .my1 {
+            font-size: 20px;
+            margin-left: -40px;
+            line-height: 2;
+        }
+
+        .my1 ul {
+            list-style-type: none;
+        }
+
+        #line {
+            height: 5px;
+            background-color: rgb(216, 253, 35);
+        }
+
+        .detail {
+            height: 1365px;
+            width: 700px;
+        }
+
+        .name {
+            font-size: 3.3rem;
+            font-weight: 700;
+            margin: 170px 0px 0px 50px;
+            letter-spacing: 2px;
+        }
+
+        .student {
+            font-size: 1.6rem;
+            margin: 0px 0px 130px 50px;
+            letter-spacing: 2px;
+        }
+
+        .education {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            margin: 0px 0px 30px 50px;
+        }
+
+        .scol {
+            font-weight: 600;
+            margin: 15px 0px 0px 40px;
+            margin-bottom: 40px;
+        }
+
+        .scol :first-child {
+            margin-left: -5px;
+        }
+
+        .study {
+            font-weight: lighter;
+            margin-top: 5px;
+        }
+
+        .study ul {
+            margin: 10px 0px 0px 20px;
+            list-style-type: circle;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="detail">
+            <div class="name">ABC <br>PATEL</div>
+            <div class="student">student</div>
+            <div class="education">✨ EDUCATION
+                <div class="scol">GUJARAT TECHNOLOGICAL UNIVERSITY
+                    <div class="study" id="123">
+                        <ul>
+                            <li>Computer Engineering (3rd year)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scol">SARVA VIDYALAYA HIGHSCHOOL <br> HSC
+                    <div class="study">
+                        <ul>
+                            <li>P.R. - 87.32</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="education">✨ LANGUAGE
+                <div class="study">
+                    <ul>
+                        <li>intermediate English.</li>
+                        <li>Advanced Gujarati.</li>
+                        <li>intermediate Hindi.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education">✨ TECHNICAL SKILLS
+                <div class="study">
+                    <ul>
+                        <li>Advanced Python.</li>
+                        <li>C/Java</li>
+                        <li>Basic SQL/HTML/CSS</li>
+                        <li>Python library like sklearn, matlab,numpy, pandas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education">✨ PROJECTS
+                <div class="study">
+                    <ul>
+                        <li>Basic python projects like qrcode generator, shut down, valid mail etc..</li>
+                        <li>TIC TAC TOE APP in java</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="man.jpg" alt="">
+            <div>Strength
+                <div id="line"></div>
+                <div class="my"><b>Strategic Planner</b> <br> Developing steps along the way to achieve "big picture"
+                    results with market & stakeholder input.</div>
+            </div>
+            <div>CONTACT ME
+                <div id="line"></div>
+                <div class="my1">
+                    <ul>
+                        <li>📱 1234567890</li>
+                        <li>✉️ xyz123@gmail.com</li>
+                        <li>📍 1, new society, surat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
