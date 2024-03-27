@@ -1,0 +1,58 @@
+/* *{
+    font-size: 150%;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-style: italic;
+    text-decoration:overline;
+    text-decoration-color: rgb(189, 80, 80);
+    font-weight: 1000;
+    text-align: center;
+    text-indent: 50%;
+
+    
+} */
+
+p {
+    /* border-style: dotted ridge dashed solid;
+    border-width: 5px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 10px; */
+    animation-name: important2;
+    animation-duration: 1s;
+}
+
+
+@keyframes important2 {
+    from {
+       border: dashed 5px red;
+    }
+
+    to {
+        border: solid 2px blue;
+    }
+}
+
+/* .tooltip{
+    position: relative;
+} */
+
+.tooltiptext{
+    visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    
+}
+
+
+
+
+/* ul{
+    list-style: url(Mathbrain.png) inside;
+} */
+
+/* ol{
+    list-style:lower-roman;
+} */

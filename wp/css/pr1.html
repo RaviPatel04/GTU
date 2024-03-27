@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-1 CSS</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
         .container {
             height: 400px;
+            background-color: #ddd0d1;
             display: flex;
         }
 
         .profile {
             height: 1365px;
             width: 500px;
-            background-color: #982727;
+            background-color: #b39e9f;
             margin-left: 25px;
             text-align: center;
             box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .7);
@@ -28,18 +34,18 @@
             border: 5px solid white;
         }
 
-
         .profile> :nth-child(2) {
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 900;
             width: 200px;
             text-align: left;
-            margin: 10px 0px 40px 150px;
+            margin: 0px 0px 40px 150px;
             color: white;
+            /* text-align: justify; */
         }
 
         .profile> :nth-child(3) {
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 900;
             width: 250px;
             text-align: left;
@@ -57,7 +63,6 @@
         }
 
         .my1 {
-            font-size: 20px;
             margin-left: -40px;
             line-height: 2;
         }
@@ -66,20 +71,18 @@
             list-style-type: none;
         }
 
-        #line {
-            height: 5px;
-            background-color: rgb(216, 253, 35);
-        }
 
         .detail {
             height: 1365px;
             width: 700px;
+            /* background-color: rgba(81, 62, 9, 0.824); */
         }
 
         .name {
             font-size: 3.3rem;
             font-weight: 700;
             margin: 170px 0px 0px 50px;
+            font-family: "Lato", sans-serif;
             letter-spacing: 2px;
         }
 
@@ -87,6 +90,7 @@
             font-size: 1.6rem;
             margin: 0px 0px 130px 50px;
             letter-spacing: 2px;
+            font-family: "Lora", serif;
         }
 
         .education {
@@ -94,11 +98,13 @@
             font-size: 1.5rem;
             letter-spacing: 2px;
             margin: 0px 0px 30px 50px;
+            font-family: "Lato", sans-serif;
         }
 
         .scol {
             font-weight: 600;
             margin: 15px 0px 0px 40px;
+            font-family: "Lora", serif;
             margin-bottom: 40px;
         }
 
@@ -122,11 +128,27 @@
 
 <body>
     <div class="container">
-
+        <div class="profile">
+            <img src="man.jpg" alt="">
+            <div>PROFILE
+                <div class="my">I am a student with a things information technology support jobs. I consider my self a
+                    responsible
+                    and orderly person. I am looking forward for my first work experience.</div>
+            </div>
+            <div>CONTACT ME
+                <div class="my1">
+                    <ul>
+                        <li>📞 1234567890</li>
+                        <li>📧 xyz123@gmail.com</li>
+                        <li>📌 1, new society, surat.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="detail">
             <div class="name">ABC <br>PATEL</div>
             <div class="student">student</div>
-            <div class="education">✨ EDUCATION
+            <div class="education">🔰 EDUCATION
                 <div class="scol">GUJARAT TECHNOLOGICAL UNIVERSITY
                     <div class="study" id="123">
                         <ul>
@@ -142,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <div class="education">✨ LANGUAGE
+            <div class="education">🔰 LANGUAGE
                 <div class="study">
                     <ul>
                         <li>intermediate English.</li>
@@ -151,7 +173,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="education">✨ TECHNICAL SKILLS
+            <div class="education">🔰 TECHNICAL SKILLS
                 <div class="study">
                     <ul>
                         <li>Advanced Python.</li>
@@ -161,30 +183,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="education">✨ PROJECTS
+            <div class="education">🔰 PROJECTS
                 <div class="study">
                     <ul>
                         <li>Basic python projects like qrcode generator, shut down, valid mail etc..</li>
                         <li>TIC TAC TOE APP in java</li>
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="profile">
-            <img src="man.jpg" alt="">
-            <div>Strength
-                <div id="line"></div>
-                <div class="my"><b>Strategic Planner</b> <br> Developing steps along the way to achieve "big picture"
-                    results with market & stakeholder input.</div>
-            </div>
-            <div>CONTACT ME
-                <div id="line"></div>
-                <div class="my1">
-                    <ul>
-                        <li>📱 1234567890</li>
-                        <li>✉️ xyz123@gmail.com</li>
-                        <li>📍 1, new society, surat.</li>
                     </ul>
                 </div>
             </div>
