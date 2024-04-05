@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-4 JS</title>
+    <script src="pr4.js"></script>
+</head>
+
+<body>
+    <h1>Change Color</h1>
+
+    <label for="bgColorSelect">Select Background Color:</label>
+    <select id="bgColorSelect" onchange="changeBackgroundColor(this.value)">
+        <option value="">Select Color</option>
+        <option value="white">White</option>
+        <option value="gray">Gray</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <br>
+    <br>
+    <label for="fgColorSelect">Select Foreground Color:</label>
+    <select id="fgColorSelect" onchange="changeForegroundColor(this.value)">
+        <option value="">Select Color</option>
+        <option value="black">Black</option>
+        <option value="darkgray">Dark Gray</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+    </select>
+
+</body>
+
+</html>
