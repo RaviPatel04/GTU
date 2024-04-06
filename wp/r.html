@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Days to next birthday</title>
+    <script src="pr3.js"></script>
+</head>
+<body>
+    <form onsubmit="return formSubmit()">
+        <label for="bday">Birthday</label>
+        <input type="date" id="bday">
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>function daysUntilNextBirthday(birthdate) {
+        const today = new Date();
+        const nextBirthday = new Date(today.getFullYear(), birthdate.getMonth(), birthdate.getDate());
+    
+        if (today > nextBirthday) {
+            nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
+        }
+    
+        const daysLeft = Math.ceil((nextBirthday - today) / (1000 * 60 * 60 * 24));
+        return daysLeft;
+    }
+    
+    function formSubmit() {
+        var date = document.getElementById("bday").value;
+        alert("Your next birthday is after " + daysUntilNextBirthday(new Date(date)))
+    }
+    </script>
+</body>
+</html>
