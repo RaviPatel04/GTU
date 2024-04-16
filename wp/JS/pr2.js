@@ -1,3 +1,6 @@
+// For the form created in HTML provide various form values checking passed by user.
+
+
 function validateForm() {
 
     let usernameValue = document.getElementById("username").value;

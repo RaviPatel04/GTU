@@ -1,15 +1,9 @@
-/* Demonstrate use of external style sheet. */
-
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-body {
     color: #fff;
     background-color: wheat;
     text-align: center;
@@ -32,9 +26,12 @@ label {
     font-weight: bold;
 }
 
-input[type="username"],
+input[type="text"],
 input[type="password"],
+input[type="email"],
 input[type="number"],
+select,
+textarea,
 input[type="date"],
 input[type="file"],
 input[type="reset"],
@@ -44,12 +41,44 @@ input[type="checkbox"] {
     border-radius: 20px;
     padding: 8px;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 input[type="radio"] {
     margin-right: 10px;
 }
 
-ul {
-    list-style-type: square;
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.gender-group {
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="reset"],
+input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #0056b3;
 }

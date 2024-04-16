@@ -1,3 +1,12 @@
+// Create simple application that will do following
+// Declare And assign variable
+// Operators and expression in JavaScript
+// Looping in JavaScript
+// Declare an Array
+// User defined functions in Javascript
+// Built in functions in Javascript
+// Dialog boxes
+
 let a = 10;
 let b = 20;
 let c = 2

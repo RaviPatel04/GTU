@@ -1,3 +1,5 @@
+// Write a JavaScript program function that calculates days remaining till your birthday.
+
 
 function calculateDays() {
     let birthdate = new Date(document.getElementById('birth-date').value);
