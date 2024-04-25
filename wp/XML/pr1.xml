@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<college>
+    <employeeDetails>
+        <fname>Ravi</fname>
+        <lname>Patel</lname>
+        <joindate>15-09-2021</joindate>
+        <bdate>01-06-2003</bdate>
+        <age>20</age>
+        <salary>100000</salary>
+    </employeeDetails>
+    <employeeDetails>
+        <fname>ABC</fname>
+        <lname>Patel</lname>
+        <joindate>16-10-2020</joindate>
+        <bdate>06-02-2004</bdate>
+        <age>19</age>
+        <salary>50000</salary>
+    </employeeDetails>
+    <employeeDetails>
+        <fname>XYZ</fname>
+        <lname>Patel</lname>
+        <joindate>04-03-2002</joindate>
+        <bdate>12-12-2002</bdate>
+        <age>22</age>
+        <salary>30000</salary>
+    </employeeDetails>
+</college>
