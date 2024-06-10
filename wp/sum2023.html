@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- charset encoding : Character encoding in HTML refers to the process of representing characters using numeric codes.
+    HTML documents are encoded using character sets such as ASCII, UTF-8, ISO-8859-1, etc. -->
+    <meta charset="UTF-8">
+
+    <!-- Viewport for Responsive Design : control the width and scaling of the viewport on mobile devices. It is essential
+    for creating a responsive design that adjusts to different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- http-equiv : used to simulate an HTTP response header within an HTML document. It can be used to
+    achieve various effects, such as setting the content type, refreshing the page, or controlling caching behavior. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Document</title>
+
+    <!-- frame in HTML -->
+    <!-- <frameset cols="50%,50%">
+        <frame src="frame_a.html">
+            <frame src="frame_b.html">
+    </frameset> -->
+</head>
+
+<body>
+    <!-- form validation attributes -->
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100">
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- two event handlers for text box & text area in JavaScript  -->
+    <input type="text" id="textbox" onfocus="alert('Textbox focused')">
+    <textarea id="textarea" onblur="alert('Textarea lost focus')"></textarea>
+
+    <h1 id="heading">Hover over me!</h1>
+    <button onclick="openChildWindow()">OPEN NEW WINDOW</button>
+    <button onclick="closeChildWindow()">CLOSE CHILD WINDOW</button>
+    <button onclick="closeMainWindow()">CLOSE MAIN WINDOW</button>
+
+    <script>
+        //mouseover and mouseout change color
+        const heading = document.getElementById('heading');
+        heading.addEventListener('mouseover', function () {
+            heading.style.color = 'green';
+        });
+        heading.addEventListener('mouseout', function () {
+            heading.style.color = 'red';
+        });
+        document.write("Welcome to the world of JS!!")
+
+
+
+
+        // click of first button, execute some JavaScript code that will open one child window. 
+        // Clicking on second button, child window will close and clicking on third button, main html page will close
+        let childWindow;
+        function openChildWindow() {
+            childWindow = window.open('', '', 'width=200,height=200');
+            childWindow.document.write('<p>This is a child window</p>');
+        }
+
+        function closeChildWindow() {
+            if (childWindow) {
+                childWindow.close();
+            }
+        }
+
+        function closeMainWindow() {
+            window.close();
+        }
+
+    </script>
+
+    <!-- set and display cookies in PHP-->
+    <!-- <?php
+    // Set cookie
+    setcookie("user", "John Doe", time() + (86400 * 30), "/"); // 86400 = 1 day
+    
+    // Display cookie
+    if(isset($_COOKIE["user"])) {
+        echo "User is " . $_COOKIE["user"];
+    } else {
+        echo "User is not set";
+    }
+    ?> -->
+
+
+
+
+    <!-- session in PHP 
+    <?php
+    // Start the session
+    session_start();
+
+    // Set session variables
+    $_SESSION["username"] = "JohnDoe";
+    $_SESSION["email"] = "john@example.com";
+
+    // Access session variables
+    echo "Username is " . $_SESSION["username"];
+    ?> -->
+
+
+    <script>
+
+        // //Armstrong Numbers between user enter interval
+        // const first = parseInt(prompt('Enter a positive fist value: '));
+        // const last = parseInt(prompt('Enter a positive last value: '));
+
+        // document.write("<br>" + 'Armstrong Numbers:');
+        // for (let i = first; i <= last; i++) {
+
+        //     let sum = 0;
+
+        //     let temp = i;
+
+        //     while (temp > 0) {
+        //         let remainder = temp % 10;
+        //         sum += (remainder * remainder * remainder);
+        //         temp = parseInt(temp / 10);
+        //     }
+
+        //     if (sum == i) {
+        //         document.write("<br>" + i);
+        //     }
+        // }
+
+
+
+        // // Prime number interval
+        // var num = prompt("Enter a number");
+        // document.write("Prime number between 0 to" + num)
+        // for (let i = 0; i <= num; i++) {
+        //     let flag = 0;
+        //     for (let j = 2; j < i; j++) {
+        //         if (i % j == 0) {
+        //             flag = 1;
+        //             break;
+        //         }
+        //     }
+
+        //     if (i > 1 && flag == 0) {
+        //         document.write(i + " ");
+        //     }
+        // }
+
+
+
+        // // odd position character print
+        // var str = prompt("Enter any string : ")
+        // document.write("String is " + str + "<br>Odd string is:")
+        // for (let i = 0; i <= str.length; i += 2) {
+        //     document.write(str[i])
+        // }
+    </script>
+
+    <!-- square and cube of 10 number -->
+    <!-- <table border="1">
+        <th>Numbers</th>
+        <th>Square</th>
+        <th>Cube</th>
+        <script>
+            for (let i = 1; i <= 10; i++) {
+                document.write("<tr><td>" + i + "</td><td>" + i * i + "</td><td>" + i * i * i + "</td><tr>")
+            }
+        </script>
+
+    </table> -->
+
+</body>
+
+</html>
