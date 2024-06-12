@@ -1,10 +1,10 @@
 
-public class StudentController {
+public class pr11StudentController {
 
-    private Student model;
-    private StudentView view;
+    private pr11Student model;
+    private pr11StudentView view;
 
-    public StudentController(Student model, StudentView view) {
+    public pr11StudentController(pr11Student model, pr11StudentView view) {
         this.model = model;
         this.view = view;
     }

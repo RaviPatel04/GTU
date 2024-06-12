@@ -1,11 +1,11 @@
 
-public class Student {
+public class pr11Student {
     private int studentId;
     private int enrollmentNumber;
     private int semester;
     private double spi;
 
-    public Student(int studentId, int enrollmentNumber, int semester, double spi) {
+    public pr11Student(int studentId, int enrollmentNumber, int semester, double spi) {
         this.studentId = studentId;
         this.enrollmentNumber = enrollmentNumber;
         this.semester = semester;

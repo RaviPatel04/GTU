@@ -1,6 +1,6 @@
 
-public class StudentView {
-    public void displayStudentDetails(Student student) {
+public class pr11StudentView {
+    public void displayStudentDetails(pr11Student student) {
         System.out.println("Student Details: ");
         System.out.println("Student ID: " + student.getStudentId());
         System.out.println("Enrollment No.: " + student.getEnrollmentNumber());

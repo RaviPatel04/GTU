@@ -1,0 +1,71 @@
+Index.html:
+
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Login Page</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:outputLabel for="username">Username:</h:outputLabel><br/>
+            <h:inputText id="username" value="#{validate.username}" required="true" /><br/><br/>
+
+            <h:outputLabel for="password">Password:</h:outputLabel><br/>
+            <h:inputSecret id="password" value="#{validate.password}" required="true" /><br/><br/>
+
+            <h:commandButton value="Login" action="#{validate.login}" />
+        </h:form>
+    </h:body>
+</html>
+
+Eroor.html:
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:body>
+         <h:outputText value="Invalid Username and  password" />
+    </h:body>
+</html>
+
+Welcome.html:
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:body>
+        <h:outputText value="Welcome #{validate.username}" />
+    </h:body>
+</html>
+
+Validate.java:
+ 
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+ 
+@ManagedBean
+@SessionScoped
+public class validate {
+    private String username;
+    private String password;
+ 
+    public String login() {
+        if ("harshil".equals(username) && "123".equals(password)) {
+            return "welcome?faces-redirect=true";
+        } else {
+            return "error?faces-redirect=true";
+        }
+    }
+ 
+    public String getUsername() {
+        return username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }}
